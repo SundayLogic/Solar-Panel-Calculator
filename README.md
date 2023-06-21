@@ -61,7 +61,7 @@ There are quite a few different quest types now and more will be added over time
 * 🐛 [Adding Test Files](CONTRIBUTING.md#testing-and-reporting-issues)
 * 📃 [Translate the app into your language](CONTRIBUTING.md#translating-the-app)
 * 🕵️ [Adding Motion Library](CONTRIBUTING.md#solving-notes)
-* 💡 [Streaming content](CONTRIBUTING.md#suggesting-new-quests), or, even better, [implement them](CONTRIBUTING.md#developing-new-quests).
+* 💡 [Adding SVGs](CONTRIBUTING.md#suggesting-new-quests), or, even better, [implement them](CONTRIBUTING.md#developing-new-quests).
 
 ## License
 
