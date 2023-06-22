@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="flex justify-center items-center h-[100vh] bg-black">
       <div className="flex flex-col justify-center items-center space-y-10">
-        <Canvas angle={angle} circleRotation={circleRotation} canvasHeight={200} circleWidth={200} canvasWidth={400} />
+        <Canvas angle={angle} circleRotation={circleRotation} canvasHeight={200} circleWidth={160} canvasWidth={500} />
         
         <div>
           <label className="text-white">Angle:</label>
