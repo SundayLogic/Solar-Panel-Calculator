@@ -1,12 +1,21 @@
-import ButtonIncrement from "./components/atoms/buttons/ButtonIncrement";
+import Canvas from "./components/molecules/Canvas";
+import React, { useState } from 'react';
 
-function App() {
+const App: React.FC = () => {
+  const [angle, setAngle] = useState(0);
+
   return (
-    <div className='w-[100vw] h-[100vh] bg-black text-white flex items-center justify-center'>
-      <h1>Project</h1>
-      <ButtonIncrement>Click</ButtonIncrement>
+    <div>
+      <input
+        type="range"
+        min="0"
+        max="360"
+        value={angle}
+        onChange={(e) => setAngle(Number(e.target.value))}
+      />
+      <Canvas angle={angle} />
     </div>
-  )
-}
+  );
+};
 
 export default App;
