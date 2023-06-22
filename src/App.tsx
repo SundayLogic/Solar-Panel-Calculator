@@ -3,18 +3,34 @@ import React, { useState } from "react";
 
 const App: React.FC = () => {
   const [angle, setAngle] = useState(0);
+  const [circleRotation, setCircleRotation] = useState(0);  // New state
 
   return (
     <div className="flex justify-center items-center h-[100vh] bg-black">
-      <div className="flex flex-col justify-center items-center">
-        <Canvas angle={angle} canvasHeight={500} circleWidth={120} canvasWidth={400}/>
-        <input
-          type="range"
-          min="0"
-          max="360"
-          value={angle}
-          onChange={(e) => setAngle(Number(e.target.value))}
-        />
+      <div className="flex flex-col justify-center items-center space-y-10">
+        <Canvas angle={angle} circleRotation={circleRotation} canvasHeight={200} circleWidth={200} canvasWidth={400} />
+        
+        <div>
+          <label className="text-white">Angle:</label>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            value={angle}
+            onChange={(e) => setAngle(Number(e.target.value))}
+          />
+        </div>
+        
+        <div>
+          <label className="text-white">Circle Rotation:</label>
+          <input
+            type="range"
+            min="0"
+            max="360"
+            value={circleRotation}
+            onChange={(e) => setCircleRotation(Number(e.target.value))}
+          />
+        </div>
       </div>
     </div>
   );
